@@ -11,7 +11,7 @@ class Game:
         run = True
         p1 = Player(350, 250)
         while run:
-            screen.fill((0, 255, 0))
+            screen.fill((255, 255, 255))
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     run = False
@@ -20,4 +20,5 @@ class Game:
             clock.tick(60)
             pygame.display.flip()
         pygame.quit()
+
 Game().main()
